@@ -2,27 +2,23 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 /*import imagenes from '../assets/img/imagenes';*/
 import logo from '../assets/img/logo.jpg';
-import Cart from '../components/Cart';
-import navBar from '../style/navBar.css'
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="success">
         <Container>
           <Navbar.Brand href="../App.js">
             <img
-              alt=""
+              alt="imagen de la shooping"
               src={logo}
-              width="250"
-              className="d-inline-block align-top"
+              width="160"
             />
             NATURISS
-            
           </Navbar.Brand>
-          <span className="carrito" ><Cart /></span>
+          <CartWidget/>
         </Container>
-        
       </Navbar>
     </div>
   );
