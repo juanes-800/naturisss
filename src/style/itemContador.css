@@ -1,0 +1,11 @@
+.contador{
+    width: fit-content;
+    background-color: rgb(248, 248, 41);
+    margin: auto;
+    padding:1rem;
+    text-align: center;
+}
+.boton{
+    padding: .2rem;
+    border-radius: .3rem;
+}

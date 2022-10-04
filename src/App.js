@@ -7,11 +7,16 @@ import ItemListContainer from './components/ItemListContainer';
 
 
 
+
 function App() {
   return (
     <div className="App">
+      <header>
       <NavBar/>
+      </header>
       <ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}> </ItemListContainer>
+      
+      
     </div>
   );
 }
