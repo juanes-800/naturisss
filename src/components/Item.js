@@ -1,4 +1,4 @@
-const tienda = require.context('../img',true)
+
 const Item = ({base}) => {
     return(
         <div className="col-lg-4">
@@ -6,7 +6,7 @@ const Item = ({base}) => {
           <div className="member-card pt-2 pb-2">
             <div className="thumb-lg member-thumb mx-auto">
               <img
-                src={tienda(`../${base.img}.webp`)}
+                src={base.img}
                 className="rounded-circle img-thumbnail"
                 alt=" "
               />

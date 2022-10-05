@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const product = [ 
     {id:1, nombre:'Te verde', precio:'24500', cantidad:1,img:'../img/1.webp'},
-    {id:2, nombre:'Te forma', precio:'14800', cantidad:1, img:'../assets/img/2.webp'},
+    {id:2, nombre:'Te forma', precio:'14800', cantidad:1, img:'img/2.webp'},
     {id:3, nombre:'Te relaxnat', precio:'14800', cantidad:1, img:'../img/3.webp'},
     {id:4, nombre:'Biotin', precio:'61000', cantidad:1, img:'../img/4.webp'},
     {id:5, nombre:'Clorofila purrcell', precio:'20850', cantidad:1, img:'../img/5.webp'},
