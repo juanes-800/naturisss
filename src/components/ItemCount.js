@@ -2,7 +2,7 @@ import '../style/itemContador.css'
 
 import React, { useState, useEffect } from 'react';
 
-const ItemContador = ({inicial, stock, onAdd}) =>{
+const ItemCount = ({inicial, stock, onAdd}) =>{
     const[ contador, setContador] = useState(parseInt(inicial));
     const suma = () => setContador( contador + 1);
     const resta = () => setContador( contador - 1);
@@ -24,4 +24,4 @@ const ItemContador = ({inicial, stock, onAdd}) =>{
     )
 } 
 
-export default ItemContador;
+export default ItemCount;

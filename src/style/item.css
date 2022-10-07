@@ -1,0 +1,28 @@
+.App {
+    text-align: center;
+  }
+  
+
+body {
+    background: #dcdcdc;
+    margin-top: 20px;
+  }
+  
+  .img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 80%;
+    height: auto;
+  }
+
+  
+  .text-muted {
+    color: #98a6ad ;
+  }
+  h4 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  

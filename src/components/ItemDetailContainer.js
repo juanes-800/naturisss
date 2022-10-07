@@ -1,6 +1,6 @@
-import ItemContador from './ItemCount';
-import ItemList from './ItemList';
-import React, { useState, useEffect } from 'react';
+
+import ItemDetail from "./ItemDetail";
+import React,{useEffect, useState} from "react";
 
 const product = [ 
     {id:1, nombre:'Te verde', precio:'24500', cantidad:1,img:'../img/1.webp'},
@@ -17,30 +17,21 @@ const product = [
     {id:12, nombre:'Amalaki', precio:'20000', cantidad:1, img:'../img/12.webp'},
 ]; 
 
-const ItemListContainer = (props) =>{
-    const [data, setData] = useState([]);
-
+const ItemDetailContainer = () =>{
+    const [data, setData] = useState({});
     useEffect(()=> {
         const getData = new Promise(resolve =>{
             setTimeout(()=>{
-                resolve( product);
+                resolve(product);
             },)
             
         });
         getData.then(res => setData(res));
     },[]);
 
-    const onAdd = (cantidad )=>{
-        console.log(`compraste ${cantidad} unidades`);
-    }
     return(
-        <>
-        <p>{props.greeting}</p>
-        <ItemContador inicial={1} stock={20} onAdd={onAdd} ></ItemContador>
-        <ItemList data={data}></ItemList>
-
-        </>
-    )
-        
+        <ItemDetail data={data}/>
+           
+    );
 }
-export default ItemListContainer;
+export default ItemDetailContainer;
