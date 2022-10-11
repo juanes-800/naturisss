@@ -1,6 +1,6 @@
-import "../style/itemDetail.css"
+import "../style/itemDetail.css";
 
-const ItemDetail = ({data}) =>{
+ const ItemDetail = ({data}) =>{
     return(
         <div className="container">
             <div className="detail">
