@@ -14,9 +14,9 @@ function App() {
         <NavBar/>
         <Routes>
          <Route path= '/' element={<ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}/>}/>
-         <Route path= '/categoria' element={<ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}/>}/>
+         <Route path= '/categoria/:categoriaId' element={<ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}/>}/>
          <Route path= '/cart' element={<CartWidget/>}/>
-         <Route path= '/detalle' element={<ItemDetailContainer/>}/>
+         <Route path= '/detalle/:detalleid' element={<ItemDetailContainer/>}/>
 
         </Routes>
       </BrowserRouter>

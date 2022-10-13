@@ -1,5 +1,6 @@
 import "../style/itemDetail.css";
 
+
  const ItemDetail = ({data}) =>{
     return(
         <div className="container">

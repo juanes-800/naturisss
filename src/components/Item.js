@@ -1,4 +1,6 @@
 import '../style/item.css'
+
+
 const Item = ({base}) => {
   return(
     <div className="col-lg-4 film">
@@ -19,6 +21,4 @@ const Item = ({base}) => {
   );
 };
 export default Item;
-
-
 
