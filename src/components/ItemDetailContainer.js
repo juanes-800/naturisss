@@ -14,10 +14,8 @@ const ItemDetailContainer = () =>{
         const getData = new Promise(resolve =>{
             resolve(product); 
         });
-        if(detalleId){
-            
-            getData.then(res => setData(res.find(product => product.id === parseInt(detalleId))));
-        }
+         getData.then(res => setData(res.find(product => product.id === parseInt(detalleId))));
+        
     },[detalleId]);
     return(
         <ItemDetail data={data}/>

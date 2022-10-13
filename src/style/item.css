@@ -21,8 +21,9 @@ body {
   .text-muted {
     color: #98a6ad ;
   }
-  h4 {
+  .title {
     line-height: 22px;
-    font-size: 18px;
+    font-size: 2rem;
+    text-decoration:none;
   }
   
