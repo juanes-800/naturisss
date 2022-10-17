@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import '../style/item.css'
 
-
 const Item = ({base}) => {
+
   return(
     <div className="col-lg-4 film">
       <div className=" pt-2 pb-2">

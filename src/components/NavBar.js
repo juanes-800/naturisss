@@ -11,11 +11,12 @@ const NavBar = () => {
      <Navbar bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto">
+            
             <Nav.Link as= {NavLink} to='/'>Home</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/te'> Te</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/vitamina'>Vitamina</Nav.Link>
-            <Nav.Link as= {NavLink} to='cart'><CartWidget/></Nav.Link>
           </Nav>
+            <span> <Nav.Link as= {NavLink} to='cart' className='carrito'><CartWidget/></Nav.Link></span>
           
         </Container>
       </Navbar></>

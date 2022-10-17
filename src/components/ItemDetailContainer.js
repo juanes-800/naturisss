@@ -1,9 +1,7 @@
-
 import ItemDetail from "./ItemDetail";
 import React,{useEffect, useState} from "react";
 import {product} from './producto';
 import { useParams } from "react-router-dom";
-
 
 
 const ItemDetailContainer = () =>{

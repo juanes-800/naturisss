@@ -1,7 +1,9 @@
 import '../style/navBar.css';
-const  CartWidget = () => {
+
+ export const  CartWidget = () => {
+    
     return(
-     <button  className="carrito"><i className="fas fa-shopping-cart "></i><span id="contadorCarrito">0</span></button>
+        <span><i className="bi bi-cart3" ></i></span>
     )
 }
 export default CartWidget;
