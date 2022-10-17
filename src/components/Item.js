@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import '../style/item.css'
+import React,{useContext} from 'react';
+import { cartContext } from '../context/CartContext';
+
 
 const Item = ({base}) => {
+  const nombre = useContext(cartContext);
+   console.log(nombre);
 
   return(
     <div className="col-lg-4 film">
