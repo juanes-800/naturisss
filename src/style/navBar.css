@@ -1,7 +1,10 @@
 .carrito{
     border: none;
-    color: #ebeff2;
+    color: #CACFD2 ;
     font-size: 50px;
     padding: 10px;
+}
+.fondo{
+    background-color: #FAFAFA;
 }
   

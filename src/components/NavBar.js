@@ -4,11 +4,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
 import { NavLink } from 'react-router-dom';
+import '../style/navBar.css';
 
 const NavBar = () => {
   return (
     <>
-     <Navbar bg="dark" variant="dark">
+     <Navbar bg="light" variant="light">
         <Container>
           <Nav className="me-auto">
             
