@@ -20,6 +20,7 @@ import { useCartContext } from "../context/CartContext";
                 <div className="content">
                     <h1>{data.name}</h1>
                     <p>{data.price} $</p>
+                    <p>{data.description} </p>
 
                     {
                         goTocart? <button className="boton contador"><NavLink  to='/cart'>Terminar Compra</NavLink ></button> :  <ItemCount inicial={1} stock={20} onAdd={onAdd} />

@@ -1,5 +1,5 @@
  export const product = [ 
-    {id:1, name:'Te verde', price:24500,category:'te',img:'../img/1.webp'},
+    {id:1, name:'Te verde', price:24500,category:'te',img:'../img/1.webp',description:'Presentación 30 Bolsitas composicion:hojas verdes '},
     {id:2, name:'Te formad', price:14800,category:'te', img:'../img/2.webp'},
     {id:3, name:'Te relaxnat', price:14800,category:'te', img:'../img/3.webp'},
     {id:4, name:'Biotin', price:61000,category:'vitamina', img:'../img/4.webp'},
