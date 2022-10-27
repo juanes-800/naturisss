@@ -14,6 +14,7 @@ const ItemDetailContainer = () =>{
         getDoc(queryDoc)
         .then( res => setData({id:res.id, ...res.data()}))
     },[detalleId]);
+
     return(
         <ItemDetail data={data}/>
            
