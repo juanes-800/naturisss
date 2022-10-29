@@ -3,7 +3,13 @@ const cartContext= React.createContext([]);
 export const useCartContext = () => useContext(cartContext);
 
 const CartProvider = ({children}) => {
+
     const[cart, setCart] = useState([]);
+    const[contextUsed, setContextUsed] = useState([]);
+    const saveData = (data) =>{
+        setContextUsed(data)
+    }
+
 
     const addProduct = (item, cantidad) =>{
      if(isInCart(item.id)){
@@ -27,7 +33,7 @@ const CartProvider = ({children}) => {
 
     const isInCart = (id) => cart.find(product => product.id === id)? true : false;
 
-    const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
+    const  removeProduct= (id) => setCart(cart.filter(product => product.id !== id));
     
 
     return (
@@ -38,7 +44,9 @@ const CartProvider = ({children}) => {
             addProduct,
             totalPrice,
             totalProducts,
-            cart
+            cart,
+            contextUsed,
+            saveData
         }}>
             {children}
         </cartContext.Provider>
