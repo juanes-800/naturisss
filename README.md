@@ -26,7 +26,8 @@ El cliente puede:
 - Firebase
 - React Bootstrap
 -React hook form
-- css
+-css
+-sweetalert
 
 ## Inicializacion
 

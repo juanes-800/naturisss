@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import CartProvider from './context/CartContext';
 import Cart from './components/Cart';
+import Alerted from './components/Alerted';
  
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
         <CartProvider>
          <NavBar/>
           <Routes>
-           <Route path= '/' element={<ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}/>}/>
-           <Route path= '/categoria/:categoriaId' element={<ItemListContainer greeting ={"Envios gratis por compras superiores a $ 100.000"}/>}/>
+           <Route path= '/' element={<ItemListContainer greeting ={<Alerted/>}/>}/>
+           <Route path= '/categoria/:categoriaId' element={<ItemListContainer />}/>
            <Route path= '/cart' element={<Cart/>}/>
            <Route path= '/detalle/:detalleId' element={<ItemDetailContainer/>}/>
           </Routes>
