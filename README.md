@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Naturis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenido! ingresaste a la  **Aplicación Naturis**. A continuacion veras una breve descripción del autor y el beneficio de visitar nuestra aplicación
+Hola mi nombres es Juan Esteban Alzate
+Actualmente  estudiande de Desarrollo fullstack , ingeniero de Alimentos.
 
-## Available Scripts
+El motivo de realizar una pagina  de alimentos funcionales es dar a conocer el desarrollo de nuevos alimentos y los beneficios que pueden aportar a su vida diaria,ya que el mundo se encuentra en una constante evolucion  en tema alimentcio  y llevar a conocer a distintos lugares de todo el mundo el conocimiento de alimentos funcionales e incentivar su consumo
 
-In the project directory, you can run:
 
-### `npm start`
+## Acerca de
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ **Naturis**  es una tienda virtual donde pudes ingresar  y observar nuestros productos  la composicin quimica con la que cuenta nuestros productos  y la presentacion de los mismos, podras conocer nuestras categorias de prodctos,  agregar al carrito y generar una orden de compra  de nuestros productos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+El cliente puede:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Ver las categorias de productos con los que cuenta nuestra aplicacion
+- Ver el detalle de un producto :Donde se especifica  la presentacion quimica  y su contenido 
+- Agregar un producto a un carrito de compras
+- Emitir una orden de compra
 
-### `npm run build`
+## Dependencias utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Firebase
+- React Bootstrap
+-React hook form
+- css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Inicializacion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para inicializar la aplicacion, se deberá ejecutar en la consola el siguiente comando de node:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install inicialmente y luego  npm start

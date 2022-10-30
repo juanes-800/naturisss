@@ -13,4 +13,6 @@
 .menu{
   font-size: 1.5rem;
 }
- 
+ a:hover{
+  background-color:#E5E7E9;
+ }
