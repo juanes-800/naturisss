@@ -1,5 +1,8 @@
 import { useCartContext } from "../context/CartContext";
 import {useForm} from 'react-hook-form';
+import { Button } from "react-bootstrap";
+import  '../style/carry.css';
+
 const Carry = () =>{
     const {register, handleSubmit, formState:{errors}} = useForm();
     const {saveData} = useCartContext()
@@ -16,6 +19,7 @@ const Carry = () =>{
                     <div>
                         <div>
                             <input
+                            className="field"
                             type="text"
                             name="nombre"
                             placeholder="Nombre"
@@ -25,6 +29,7 @@ const Carry = () =>{
                         </div>
                         <div>
                             <input
+                            className="field"
                             type="text"
                             name="telefono"
                             placeholder="Numero telefonico"
@@ -34,6 +39,7 @@ const Carry = () =>{
                         </div>
                         <div>
                             <input
+                            className="field"
                             type="text"
                             name="email"
                             placeholder="Email"
@@ -47,6 +53,7 @@ const Carry = () =>{
                         </div>
                         <div>
                             <input
+                            className="field"
                             type="password"
                             name="password"
                             placeholder="contraseña"
@@ -59,7 +66,7 @@ const Carry = () =>{
                             {errors.Contraseña?.type === "minLength" && <span>Minimo 6 caracteres</span>}
                         </div>
                     </div>
-                    <button type="submit">Iniciar</button>
+                    <Button className="text" variant="secondary"type="submit">Iniciar</Button>
                 </form>
             </div>
         </section>

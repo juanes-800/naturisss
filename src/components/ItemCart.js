@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import { useCartContext } from '../context/CartContext'
 import '../style/itemCart.css'
 
@@ -8,11 +9,11 @@ const ItemCart = ({product}) => {
         <div className='itemCart'>
             <img src = { product.img} alt ={product.title}/>
             <div>
-                <p>Titulo: {product.title}</p>
+                <p>{product.name}</p>
                 <p>Cantidad: {product.cantidad}</p>
-                <p>Precio und.: {product.price}</p>
-                <p>Subtotal: ${product.cantidad * product.price} </p>
-                <button onClick={() => removeProduct( product.id)}>Eliminar</button>
+                <p>Precio und: {product.price}</p>
+                <p>Subtotal: {product.cantidad * product.price}$</p>
+                <Button variant="secondary" onClick={() => removeProduct( product.id)}>Eliminar</Button>
             </div>
         </div>
     )

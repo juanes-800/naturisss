@@ -3,6 +3,7 @@ import ItemCount from './ItemCount';
 import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import { useCartContext } from "../context/CartContext";
+import { Button } from "react-bootstrap";
 
  const ItemDetail = ({ data }) =>{
     const[goTocart, setGoToCart] = useState(false);
@@ -19,11 +20,11 @@ import { useCartContext } from "../context/CartContext";
                 <img src={data.img}  className="detailImage" alt=""/>
                 <div className="content">
                     <h1>{data.name}</h1>
-                    <p>{data.price} $</p>
+                    <h4>{data.price} $</h4>
                     <p>{data.description} </p>
 
                     {
-                        goTocart? <button className="boton contador"><NavLink  to='/cart'>Terminar Compra</NavLink ></button> :  <ItemCount inicial={1} stock={20} onAdd={onAdd} />
+                        goTocart?  <Button variant="secondary"><NavLink  to='/cart'>Terminar Compra</NavLink ></Button>  :  <ItemCount inicial={1} stock={20} onAdd={onAdd} />
                     }
                 </div>
             </div>
@@ -32,4 +33,4 @@ import { useCartContext } from "../context/CartContext";
        
     );
 }
-export default ItemDetail;
+export default ItemDetail;  

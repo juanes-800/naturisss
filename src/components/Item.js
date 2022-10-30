@@ -10,8 +10,10 @@ const Item = ({base}) => {
     <div className="col-lg-4 film">
       <div className=" pt-2 pb-2">
         <Link to={`/detalle/${base.id}`} className="thumb-lg member-thumb mx-auto title">
-          <img src={base.img} alt=" " className=" img-thumbnail"/>
-          <h4 className='title'>{base.name}</h4>
+          <div className='card'>
+            <img src={base.img} alt=" " className="img-thumbnail"/>
+            <div><h2 >{base.name}</h2></div>
+          </div>
         </Link>
       </div>
       

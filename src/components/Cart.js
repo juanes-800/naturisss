@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import ItemCart from "./ItemCart";
 import {addDoc, collection, getFirestore} from 'firebase/firestore';
 import Carry from "./Carry";
+import { Button } from "react-bootstrap";
 
 const Cart = () =>{
     const{cart, totalPrice,contextUsed, removeProduct} = useCartContext(); 
@@ -42,7 +43,7 @@ const Cart = () =>{
         return(
             <>
             <p>No hay elementos en el carrito</p>
-            <NavLink to='/'> Realizar compras</NavLink>
+             <Button variant="secondary"><NavLink to='/'> Realizar compras</NavLink></Button>
             </>
         )
     }
@@ -58,8 +59,8 @@ const Cart = () =>{
             cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
         <p> total: $ {totalPrice()}</p>
-        <button onClick={handleClick}
-        >Generar Compra</button>
+        <Button variant="secondary" onClick={handleClick}
+        >Generar Compra</Button>
       
 
         </>

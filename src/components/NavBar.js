@@ -5,15 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
 import { NavLink } from 'react-router-dom';
 import '../style/navBar.css';
+import '../style/itemContador.css';
 
 const NavBar = () => {
   return (
     <>
-     <Navbar bg="light" variant="light">
+     <Navbar /*className='sticky-top'*/ bg="light" variant="light">
         <Container>
-          <Nav className="me-auto">
-            
-            <Nav.Link as= {NavLink} to='/'>Home</Nav.Link>
+          <Nav className=" menu ">
+            <Nav.Link className='color' as= {NavLink} to='/' >Home</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/te'> Te</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/vitamina'>Vitamina</Nav.Link>
           </Nav>

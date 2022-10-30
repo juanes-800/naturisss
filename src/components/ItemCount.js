@@ -1,6 +1,7 @@
 import '../style/itemContador.css'
 
 import React, { useState, useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 
 const ItemCount = ({inicial, stock, onAdd}) =>{
     const[ contador, setContador] = useState(parseInt(inicial));
@@ -13,11 +14,11 @@ const ItemCount = ({inicial, stock, onAdd}) =>{
 
     return (
         <div className='contador'>
-            <button className='boton' disabled={contador <= 1}  onClick= {resta}>-</button>
+            <Button variant="secondary"  disabled={contador <= 1}  onClick= {resta}>-</Button>
             <span className='boton'>{contador}</span> 
-            <button className='boton' disabled={contador >= stock} onClick= {suma}>+</button>
+            <Button variant="secondary"  disabled={contador >= stock} onClick= {suma}>+</Button>
             <div>
-                <button className='boton' disabled={stock <= 0} onClick={ () => onAdd(contador)}  > Agregar alcarrito</button>
+                <Button variant="secondary"  className='space' disabled={stock <= 0} onClick={ () => onAdd(contador)}  > Agregar alcarrito</Button>
             </div>
         </div>
         

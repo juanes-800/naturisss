@@ -1,0 +1,26 @@
+form{
+    background-color: white;
+    border-radius: 3px;
+    font-size: 1em;
+    color:#999;
+    margin: auto;
+    padding: 15px ;
+    width: 500px;
+    height: 500px;
+}
+
+.field{
+    border:solid 1px #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.field:focus{
+    border-color: rgb(235, 233, 233);
+}
+.text{
+    width: 400px;
+    margin: 10px;
+}

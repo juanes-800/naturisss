@@ -1,10 +1,16 @@
 .carrito{
     border: none;
-    color: #CACFD2 ;
+    color: #929394 ;
     font-size: 50px;
     padding: 10px;
-}
+  }
+
 .fondo{
-    background-color: #FAFAFA;
-}
+  background-color: #FAFAFA;
   
+}
+
+.menu{
+  font-size: 1.5rem;
+}
+ 
