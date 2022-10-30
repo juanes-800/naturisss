@@ -14,11 +14,17 @@ const ItemDetailContainer = () =>{
         getDoc(queryDoc)
         .then( res => setData({id:res.id, ...res.data()}))
     },[detalleId]);
-    if(data.id === detalleId){}
+    if(data.id === detalleId){
+        return(
+            <ItemDetail data={data}/>
+               
+        );
 
+    }
     return(
-        <ItemDetail data={data}/>
-           
-    );
+        <p>Este producto no existe</p>
+    )
+
+    
 }
 export default ItemDetailContainer;
