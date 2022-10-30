@@ -6,7 +6,7 @@ import Carry from "./Carry";
 import { Button } from "react-bootstrap";
 
 const Cart = () =>{
-    const{cart, totalPrice,contextUsed, removeProduct} = useCartContext(); 
+    const{cart, totalPrice,contextUsed, clearCart} = useCartContext(); 
 
     const order = {
         buyer:{
@@ -33,10 +33,13 @@ const Cart = () =>{
          const ordenUsuarios = collection(db, "usuarios")
          addDoc(ordenUsuarios, usuarios)
          .then(({id}) => console.log("id compra:", id))
-         removeProduct()
+         clearCarts()
+         
     }
 
-    
+    const clearCarts = ()=>{
+        clearCart()
+    }
     
    
     if(cart.length === 0){
@@ -59,9 +62,11 @@ const Cart = () =>{
             cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
         <p> total: $ {totalPrice()}</p>
-        <Button variant="secondary" onClick={handleClick}
-        >Generar Compra</Button>
-      
+
+        <div>
+        <Button variant="secondary" onClick={handleClick}>Generar Compra</Button>
+        <Button variant="secondary" onClick={clearCarts}> Borrar carrito</Button>
+        </div>
 
         </>
     )

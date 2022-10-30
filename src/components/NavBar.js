@@ -10,10 +10,10 @@ import '../style/itemContador.css';
 const NavBar = () => {
   return (
     <>
-     <Navbar /*className='sticky-top'*/ bg="light" variant="light">
+     <Navbar className='sticky-top' bg="light" variant="light">
         <Container>
           <Nav className=" menu ">
-            <Nav.Link className='color' as= {NavLink} to='/' >Home</Nav.Link>
+            <Nav.Link className='logo' as= {NavLink} to='/' >Naturis</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/te'> Te</Nav.Link>
             <Nav.Link as= {NavLink} to='/categoria/vitamina'>Vitamina</Nav.Link>
           </Nav>
